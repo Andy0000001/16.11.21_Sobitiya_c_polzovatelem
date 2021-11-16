@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            background-color: navy;
+            height: 50px;
+            width: 50px;
+        }
+        
+        
+    </style>
+    
+</head>
+<!--
+<body id = "body1">
+<div></div>
+<script>
+    body1.onclick = function(e){
+        out.innerText='Click detected over ' + e.target.nodeName;
+    };
+</script>
+<p id="out"></p>
+-->
+
+<body id = "body1">
+    <div></div>
+    <script>
+        body1.addEvenListener = ("click",function(e){
+            out.innerText=' Click detected over ' + e.target.nodeName;
+        });
+    </script>
+    <p id="out"></p>
+</body>
+
+</html>
